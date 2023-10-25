@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231025 23:54:58.519" rpa="false" schemaversion="4">
+<suite id="s1" name="E2E" source="C:\Users\jlenz\Documents\Stuff-Career\Projects\testchallenge-adventureconsultancysolutions-robotframework\tests\e2e.robot">
+<test id="s1-t1" name="EndToEnd" line="8">
+<kw name="I go to Luma Marketplace" library="actions_Section_Header">
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>headless=${isHeadless}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20231025 23:54:59.251" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\jlenz\\Documents\\Stuff-Career\\Projects\\testchallenge-adventureconsultancysolutions-robotframework\\log\\browser\\traces\\26b4a41c-5f4d-45a0-b3de-7d0519afd721"}</msg>
+<msg timestamp="20231025 23:54:59.555" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\jlenz\\Documents\\Stuff-Career\\Projects\\testchallenge-adventureconsultancysolutions-robotframework\\log\\browser\\traces\\26b4a41c-5f4d-45a0-b3de-7d0519afd721"}</msg>
+<status status="PASS" starttime="20231025 23:54:59.251" endtime="20231025 23:54:59.556"/>
+</kw>
+<kw name="New Context" library="Browser">
+<arg>viewport={'width': ${browserWidth}, 'height': ${browserHeight}}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20231025 23:54:59.557" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "hideRfBrowser": "",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}</msg>
+<msg timestamp="20231025 23:54:59.574" level="INFO">Successfully created context. </msg>
+<msg timestamp="20231025 23:54:59.575" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'hideRfBrowser': '', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<status status="PASS" starttime="20231025 23:54:59.556" endtime="20231025 23:54:59.575"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://magento.softwaretestingboard.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20231025 23:55:01.136" level="INFO">Successfully initialized new page object and opened url: https://magento.softwaretestingboard.com/</msg>
+<status status="PASS" starttime="20231025 23:54:59.575" endtime="20231025 23:55:01.136"/>
+</kw>
+<status status="PASS" starttime="20231025 23:54:59.251" endtime="20231025 23:55:01.137"/>
+</kw>
+<kw name="I register a new account" library="actions_MergedPages">
+<kw name="I go to Create New Customer Account page" library="actions_Section_Header">
+<kw name="Click" library="Browser">
+<arg>${header_Link_CreateAnAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:01.138" endtime="20231025 23:55:02.485"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:01.137" endtime="20231025 23:55:02.486"/>
+</kw>
+<kw name="I fill up the required information" library="actions_Page_CreateAccount">
+<kw name="Type Text" library="Browser">
+<arg>${createAccount_Input_FirstName}</arg>
+<arg>${firstName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:02.486" level="INFO">Types the text 'Sample' in the given field.</msg>
+<status status="PASS" starttime="20231025 23:55:02.486" endtime="20231025 23:55:02.661"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${createAccount_Input_LastName}</arg>
+<arg>${lastName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:02.662" level="INFO">Types the text 'Automation' in the given field.</msg>
+<status status="PASS" starttime="20231025 23:55:02.662" endtime="20231025 23:55:02.784"/>
+</kw>
+<kw name="Generate Random Email" library="actions_Page_CreateAccount">
+<kw name="Generate Random String" library="String">
+<var>${random}</var>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20231025 23:55:02.786" level="INFO">${random} = 41504514</msg>
+<status status="PASS" starttime="20231025 23:55:02.785" endtime="20231025 23:55:02.786"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${randomEmail}</var>
+<arg>user${random}@email.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20231025 23:55:02.786" level="INFO">${randomEmail} = user41504514@email.com</msg>
+<status status="PASS" starttime="20231025 23:55:02.786" endtime="20231025 23:55:02.786"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${randomEmail}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20231025 23:55:02.786" level="INFO">${randomEmail} = user41504514@email.com</msg>
+<status status="PASS" starttime="20231025 23:55:02.786" endtime="20231025 23:55:02.787"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:02.785" endtime="20231025 23:55:02.787"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${createAccount_Input_Email}</arg>
+<arg>${randomEmail}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:02.787" level="INFO">Types the text 'user41504514@email.com' in the given field.</msg>
+<status status="PASS" starttime="20231025 23:55:02.787" endtime="20231025 23:55:02.857"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${createAccount_Input_Password}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:02.858" level="INFO">Types the text 'Test.321' in the given field.</msg>
+<status status="PASS" starttime="20231025 23:55:02.858" endtime="20231025 23:55:02.907"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${createAccount_Input_ConfirmPassword}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:02.909" level="INFO">Types the text 'Test.321' in the given field.</msg>
+<status status="PASS" starttime="20231025 23:55:02.908" endtime="20231025 23:55:02.933"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${createAccount_Button_CreateAnAccount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:02.933" endtime="20231025 23:55:05.195"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:02.486" endtime="20231025 23:55:05.195"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:01.137" endtime="20231025 23:55:05.196"/>
+</kw>
+<kw name="I logoff" library="actions_Section_Header">
+<kw name="Wait For Elements State" library="Browser">
+<arg>${header_Accordion_ProfileName}</arg>
+<arg>stable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20231025 23:55:05.325" level="INFO">Waited for Element with selector xpath=//header[@class = "page-header"]//button[@data-action="customer-menu-toggle"] at state stable</msg>
+<status status="PASS" starttime="20231025 23:55:05.196" endtime="20231025 23:55:05.325"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${header_Accordion_ProfileName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:05.325" endtime="20231025 23:55:05.460"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${header_Link_SignOut}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:05.461" endtime="20231025 23:55:06.459"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:05.196" endtime="20231025 23:55:06.459"/>
+</kw>
+<kw name="I login using the new registered account" library="actions_MergedPages">
+<kw name="I go to Customer Login page" library="actions_Section_Header">
+<kw name="Click" library="Browser">
+<arg>${header_Link_SignIn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:06.460" endtime="20231025 23:55:07.179"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:06.460" endtime="20231025 23:55:07.179"/>
+</kw>
+<kw name="I provide valid login credentials" library="actions_Page_CustomerLogin">
+<kw name="Type Text" library="Browser">
+<arg>${customerLogin_Input_Email}</arg>
+<arg>${randomEmail}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:07.180" level="INFO">Types the text 'user41504514@email.com' in the given field.</msg>
+<status status="PASS" starttime="20231025 23:55:07.180" endtime="20231025 23:55:07.339"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>${customerLogin_Input_Password}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:07.339" level="INFO">Types the text 'Test.321' in the given field.</msg>
+<status status="PASS" starttime="20231025 23:55:07.339" endtime="20231025 23:55:07.459"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${customerLogin_Button_SignIn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:07.460" endtime="20231025 23:55:08.718"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:07.180" endtime="20231025 23:55:08.718"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:06.460" endtime="20231025 23:55:08.718"/>
+</kw>
+<kw name="I add several items in the cart" library="actions_MergedPages">
+<kw name="I click the header tab" library="actions_Section_Header">
+<arg>Men</arg>
+<kw name="Click" library="Browser">
+<arg>xpath=//span[text() = "${headerTabName}"]/ancestor::a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:08.719" endtime="20231025 23:55:09.284"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:08.718" endtime="20231025 23:55:09.284"/>
+</kw>
+<kw name="I click the sidebar link" library="actions_Section_SideBar">
+<arg>Jackets</arg>
+<kw name="Click" library="Browser">
+<arg>xpath=//div[@class = "sidebar sidebar-main"]//a[text() = "${sidebarLinkText}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:09.285" endtime="20231025 23:55:10.086"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:09.284" endtime="20231025 23:55:10.086"/>
+</kw>
+<kw name="I order the item" library="actions_Page_ProductsView">
+<arg>${itemOne_Name}</arg>
+<arg>${itemOne_Size}</arg>
+<arg>${itemOne_Color}</arg>
+<arg>${itemOne_Count}</arg>
+<kw name="Click" library="Browser">
+<arg>xpath=//ol[@class = "products list items product-items"]//li//strong[@class = "product name product-item-name"]//a[contains(text(), "${itemName}")]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:10.087" endtime="20231025 23:55:10.685"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//form[@id = "product_addtocart_form"]//div[contains(@aria-labelledby, "option-label-size")]/div[@option-label="${itemSize}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:10.685" endtime="20231025 23:55:11.115"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//form[@id = "product_addtocart_form"]//div[contains(@aria-labelledby, "option-label-color")]/div[@option-label="${itemColor}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:11.115" endtime="20231025 23:55:11.141"/>
+</kw>
+<kw name="Clear Text" library="Browser">
+<arg>xpath=//form[@id = "product_addtocart_form"]//input[@name = "qty"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears the text field found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:11.141" endtime="20231025 23:55:11.152"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>xpath=//form[@id = "product_addtocart_form"]//input[@name = "qty"]</arg>
+<arg>${itemCount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:11.152" level="INFO">Types the text '1' in the given field.</msg>
+<status status="PASS" starttime="20231025 23:55:11.152" endtime="20231025 23:55:11.165"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${productsView_Button_AddToCart}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:11.165" endtime="20231025 23:55:11.208"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${productsView_Button_Added}</arg>
+<arg>stable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20231025 23:55:12.049" level="INFO">Waited for Element with selector xpath=//button[@title = "Added"] at state stable</msg>
+<status status="PASS" starttime="20231025 23:55:11.208" endtime="20231025 23:55:12.050"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:10.086" endtime="20231025 23:55:12.050"/>
+</kw>
+<kw name="I click the header tab" library="actions_Section_Header">
+<arg>Women</arg>
+<kw name="Click" library="Browser">
+<arg>xpath=//span[text() = "${headerTabName}"]/ancestor::a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:12.050" endtime="20231025 23:55:12.529"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:12.050" endtime="20231025 23:55:12.529"/>
+</kw>
+<kw name="I click the sidebar link" library="actions_Section_SideBar">
+<arg>Shorts</arg>
+<kw name="Click" library="Browser">
+<arg>xpath=//div[@class = "sidebar sidebar-main"]//a[text() = "${sidebarLinkText}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:12.530" endtime="20231025 23:55:13.078"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:12.530" endtime="20231025 23:55:13.078"/>
+</kw>
+<kw name="I order the item" library="actions_Page_ProductsView">
+<arg>${itemTwo_Name}</arg>
+<arg>${itemTwo_Size}</arg>
+<arg>${itemTwo_Color}</arg>
+<arg>${itemTwo_Count}</arg>
+<kw name="Click" library="Browser">
+<arg>xpath=//ol[@class = "products list items product-items"]//li//strong[@class = "product name product-item-name"]//a[contains(text(), "${itemName}")]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:13.079" endtime="20231025 23:55:13.773"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//form[@id = "product_addtocart_form"]//div[contains(@aria-labelledby, "option-label-size")]/div[@option-label="${itemSize}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:13.773" endtime="20231025 23:55:14.174"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//form[@id = "product_addtocart_form"]//div[contains(@aria-labelledby, "option-label-color")]/div[@option-label="${itemColor}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:14.175" endtime="20231025 23:55:14.254"/>
+</kw>
+<kw name="Clear Text" library="Browser">
+<arg>xpath=//form[@id = "product_addtocart_form"]//input[@name = "qty"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears the text field found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:14.254" endtime="20231025 23:55:14.280"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>xpath=//form[@id = "product_addtocart_form"]//input[@name = "qty"]</arg>
+<arg>${itemCount}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:14.281" level="INFO">Types the text '2' in the given field.</msg>
+<status status="PASS" starttime="20231025 23:55:14.280" endtime="20231025 23:55:14.294"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${productsView_Button_AddToCart}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:14.294" endtime="20231025 23:55:14.340"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${productsView_Button_Added}</arg>
+<arg>stable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20231025 23:55:15.678" level="INFO">Waited for Element with selector xpath=//button[@title = "Added"] at state stable</msg>
+<status status="PASS" starttime="20231025 23:55:14.341" endtime="20231025 23:55:15.678"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:13.079" endtime="20231025 23:55:15.679"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:08.718" endtime="20231025 23:55:15.679"/>
+</kw>
+<kw name="I validate the items added in the cart" library="actions_MergedPages">
+<kw name="I go to Shopping Cart page" library="actions_Section_Header">
+<kw name="Click" library="Browser">
+<arg>${header_Link_Cart}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:15.679" endtime="20231025 23:55:15.706"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${header_Link_ViewCart}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231025 23:55:15.707" endtime="20231025 23:55:17.055"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:15.679" endtime="20231025 23:55:17.055"/>
+</kw>
+<kw name="I validate the item added" library="actions_Page_ShoppingCart">
+<arg>${itemOne_Name}</arg>
+<arg>${itemOne_Price}</arg>
+<arg>${itemOne_Size}</arg>
+<arg>${itemOne_Color}</arg>
+<arg>${itemOne_Count}</arg>
+<kw name="Get Element Count" library="Browser">
+<arg>xpath=//table[@id = "shopping-cart-table"]//tr[@class = "item-info"]//a[contains(text(), "${itemName}")]</arg>
+<arg>&gt;</arg>
+<arg>0</arg>
+<arg>"The item \"${itemName}\" was not found!"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<msg timestamp="20231025 23:55:17.056" level="WARN">Keyword 'Get Element Count' found both from a custom library 'Browser' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Browser.Get Element Count' or 'XML.Get Element Count'.</msg>
+<status status="PASS" starttime="20231025 23:55:17.056" endtime="20231025 23:55:17.105"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>xpath=//table[@id = "shopping-cart-table"]//a[contains(text(), "${itemName}")]//ancestor::tr[@class = "item-info"]//td[@data-th= "Price"]//span[@class = "price"]</arg>
+<arg>*=</arg>
+<arg>${itemPrice}</arg>
+<arg>"The item \"${itemName}\" price is incorrect!"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:17.187" level="INFO">Text: '$49.00'</msg>
+<status status="PASS" starttime="20231025 23:55:17.105" endtime="20231025 23:55:17.187"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<arg>xpath=//table[@id = "shopping-cart-table"]//a[contains(text(), "${itemName}")]//ancestor::tr[@class = "item-info"]//td[@data-th= "Qty"]//input</arg>
+<arg>value</arg>
+<arg>==</arg>
+<arg>${itemCount}</arg>
+<arg>"The item \"${itemName}\" quantity is incorrect!"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:17.225" level="INFO">Attribute is: '1'</msg>
+<status status="PASS" starttime="20231025 23:55:17.187" endtime="20231025 23:55:17.225"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${itemSubTotal}</var>
+<arg>${itemPrice} * ${itemCount}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231025 23:55:17.226" level="INFO">${itemSubTotal} = 49.0</msg>
+<status status="PASS" starttime="20231025 23:55:17.226" endtime="20231025 23:55:17.226"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${itemSubTotal}</var>
+<arg>${itemSubTotal}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231025 23:55:17.226" level="INFO">${itemSubTotal} = 49.0</msg>
+<status status="PASS" starttime="20231025 23:55:17.226" endtime="20231025 23:55:17.226"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>xpath=//table[@id = "shopping-cart-table"]//a[contains(text(), "${itemName}")]//ancestor::tr[@class = "item-info"]//td[@data-th= "Subtotal"]//span[@class = "price"]</arg>
+<arg>*=</arg>
+<arg>${itemSubTotal}</arg>
+<arg>"The item \"${itemName}\" subtotal is incorrect!"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:17.261" level="INFO">Text: '$49.00'</msg>
+<status status="PASS" starttime="20231025 23:55:17.227" endtime="20231025 23:55:17.261"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:17.055" endtime="20231025 23:55:17.261"/>
+</kw>
+<kw name="I validate the item added" library="actions_Page_ShoppingCart">
+<arg>${itemTwo_Name}</arg>
+<arg>${itemTwo_Price}</arg>
+<arg>${itemTwo_Size}</arg>
+<arg>${itemTwo_Color}</arg>
+<arg>${itemTwo_Count}</arg>
+<kw name="Get Element Count" library="Browser">
+<arg>xpath=//table[@id = "shopping-cart-table"]//tr[@class = "item-info"]//a[contains(text(), "${itemName}")]</arg>
+<arg>&gt;</arg>
+<arg>0</arg>
+<arg>"The item \"${itemName}\" was not found!"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<msg timestamp="20231025 23:55:17.261" level="WARN">Keyword 'Get Element Count' found both from a custom library 'Browser' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Browser.Get Element Count' or 'XML.Get Element Count'.</msg>
+<status status="PASS" starttime="20231025 23:55:17.262" endtime="20231025 23:55:17.273"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>xpath=//table[@id = "shopping-cart-table"]//a[contains(text(), "${itemName}")]//ancestor::tr[@class = "item-info"]//td[@data-th= "Price"]//span[@class = "price"]</arg>
+<arg>*=</arg>
+<arg>${itemPrice}</arg>
+<arg>"The item \"${itemName}\" price is incorrect!"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:17.370" level="INFO">Text: '$45.00'</msg>
+<status status="PASS" starttime="20231025 23:55:17.273" endtime="20231025 23:55:17.370"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<arg>xpath=//table[@id = "shopping-cart-table"]//a[contains(text(), "${itemName}")]//ancestor::tr[@class = "item-info"]//td[@data-th= "Qty"]//input</arg>
+<arg>value</arg>
+<arg>==</arg>
+<arg>${itemCount}</arg>
+<arg>"The item \"${itemName}\" quantity is incorrect!"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:17.482" level="INFO">Attribute is: '2'</msg>
+<status status="PASS" starttime="20231025 23:55:17.370" endtime="20231025 23:55:17.482"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${itemSubTotal}</var>
+<arg>${itemPrice} * ${itemCount}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231025 23:55:17.482" level="INFO">${itemSubTotal} = 90.0</msg>
+<status status="PASS" starttime="20231025 23:55:17.482" endtime="20231025 23:55:17.482"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${itemSubTotal}</var>
+<arg>${itemSubTotal}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20231025 23:55:17.483" level="INFO">${itemSubTotal} = 90.0</msg>
+<status status="PASS" starttime="20231025 23:55:17.483" endtime="20231025 23:55:17.483"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>xpath=//table[@id = "shopping-cart-table"]//a[contains(text(), "${itemName}")]//ancestor::tr[@class = "item-info"]//td[@data-th= "Subtotal"]//span[@class = "price"]</arg>
+<arg>*=</arg>
+<arg>${itemSubTotal}</arg>
+<arg>"The item \"${itemName}\" subtotal is incorrect!"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231025 23:55:17.557" level="INFO">Text: '$90.00'</msg>
+<status status="PASS" starttime="20231025 23:55:17.483" endtime="20231025 23:55:17.557"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:17.261" endtime="20231025 23:55:17.557"/>
+</kw>
+<status status="PASS" starttime="20231025 23:55:15.679" endtime="20231025 23:55:17.557"/>
+</kw>
+<status status="PASS" starttime="20231025 23:54:59.248" endtime="20231025 23:55:17.557"/>
+</test>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<msg timestamp="20231025 23:55:17.778" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20231025 23:55:17.675" endtime="20231025 23:55:17.778"/>
+</kw>
+<status status="PASS" starttime="20231025 23:54:58.520" endtime="20231025 23:55:17.779"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="E2E">E2E</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231025 23:55:17.056" level="WARN">Keyword 'Get Element Count' found both from a custom library 'Browser' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Browser.Get Element Count' or 'XML.Get Element Count'.</msg>
+<msg timestamp="20231025 23:55:17.261" level="WARN">Keyword 'Get Element Count' found both from a custom library 'Browser' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Browser.Get Element Count' or 'XML.Get Element Count'.</msg>
+</errors>
+</robot>
