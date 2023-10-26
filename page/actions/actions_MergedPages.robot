@@ -27,5 +27,6 @@ I add several items in the cart
 
 I validate the items added in the cart
     I go to Shopping Cart page
+    Initialize order total
     I validate the item added                   ${itemOne_Name}     ${itemOne_Price}    ${itemOne_Size}     ${itemOne_Color}    ${itemOne_Count}
     I validate the item added                   ${itemTwo_Name}     ${itemTwo_Price}    ${itemTwo_Size}     ${itemTwo_Color}    ${itemTwo_Count}

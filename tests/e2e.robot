@@ -12,4 +12,4 @@ EndToEnd
     I login using the new registered account
     I add several items in the cart
     I validate the items added in the cart
-#    I validate the total amount
+    I validate the total amount
