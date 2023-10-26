@@ -1,0 +1,190 @@
+{"level":30,"time":"2023-10-26T00:17:08.431Z","pid":24412,"hostname":"Amfster","msg":"Listening on 58086"}
+{"level":30,"time":"2023-10-26T00:17:08.619Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:08.619Z","pid":24412,"hostname":"Amfster","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:08.621Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:08.621Z","pid":24412,"hostname":"Amfster","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:08.625Z","pid":24412,"hostname":"Amfster","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-10-26T00:17:08.913Z","pid":24412,"hostname":"Amfster","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-10-26T00:17:08.919Z","pid":24412,"hostname":"Amfster","msg":"Start of node method newContext"}
+{"level":30,"time":"2023-10-26T00:17:08.920Z","pid":24412,"hostname":"Amfster","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-10-26T00:17:08.920Z","pid":24412,"hostname":"Amfster","msg":"Trace file: "}
+{"level":30,"time":"2023-10-26T00:17:08.932Z","pid":24412,"hostname":"Amfster","msg":"Changed active context"}
+{"level":30,"time":"2023-10-26T00:17:08.932Z","pid":24412,"hostname":"Amfster","msg":"End of node method newContext"}
+{"level":30,"time":"2023-10-26T00:17:08.938Z","pid":24412,"hostname":"Amfster","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-10-26T00:17:08.938Z","pid":24412,"hostname":"Amfster","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-10-26T00:17:09.052Z","pid":24412,"hostname":"Amfster","msg":"Video path: undefined"}
+{"level":30,"time":"2023-10-26T00:17:09.053Z","pid":24412,"hostname":"Amfster","msg":"Changed active page"}
+{"level":30,"time":"2023-10-26T00:17:10.405Z","pid":24412,"hostname":"Amfster","msg":"End of node method newPage"}
+{"level":30,"time":"2023-10-26T00:17:10.408Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:10.409Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//div[@class = \"panel header\"]//a[text() = \"Create an Account\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:11.220Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:11.222Z","pid":24412,"hostname":"Amfster","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:11.223Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//input[@id= \"firstname\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:11.392Z","pid":24412,"hostname":"Amfster","msg":"End of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:11.394Z","pid":24412,"hostname":"Amfster","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:11.394Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//input[@id= \"lastname\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:11.504Z","pid":24412,"hostname":"Amfster","msg":"End of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:11.508Z","pid":24412,"hostname":"Amfster","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:11.508Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//input[@id= \"email_address\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:11.550Z","pid":24412,"hostname":"Amfster","msg":"End of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:11.552Z","pid":24412,"hostname":"Amfster","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:11.552Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//input[@id= \"password\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:11.591Z","pid":24412,"hostname":"Amfster","msg":"End of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:11.593Z","pid":24412,"hostname":"Amfster","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:11.593Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//input[@id= \"password-confirmation\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:11.612Z","pid":24412,"hostname":"Amfster","msg":"End of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:11.615Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:11.615Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//button[@title= \"Create an Account\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:13.965Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:13.968Z","pid":24412,"hostname":"Amfster","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-10-26T00:17:13.968Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//header[@class = \"page-header\"]//button[@data-action=\"customer-menu-toggle\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:14.096Z","pid":24412,"hostname":"Amfster","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-10-26T00:17:14.098Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:14.098Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//header[@class = \"page-header\"]//button[@data-action=\"customer-menu-toggle\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:14.199Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:14.202Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:14.202Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//header[@class = \"page-header\"]//div[@class = \"customer-menu\"]//a[contains(text(), \"Sign Out\")] in page."}
+{"level":30,"time":"2023-10-26T00:17:15.288Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:15.291Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:15.291Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//div[@class = \"panel header\"]//a[contains(text(), \"Sign In\")] in page."}
+{"level":30,"time":"2023-10-26T00:17:16.070Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:16.072Z","pid":24412,"hostname":"Amfster","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:16.072Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//input[@id = \"email\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:16.253Z","pid":24412,"hostname":"Amfster","msg":"End of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:16.255Z","pid":24412,"hostname":"Amfster","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:16.255Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//input[@name = \"login[password]\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:16.346Z","pid":24412,"hostname":"Amfster","msg":"End of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:16.349Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:16.349Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//div[@class = \"login-container\"]//button[@name= \"send\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:17.952Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:17.955Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:17.955Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//span[text() = \"Men\"]/ancestor::a in page."}
+{"level":30,"time":"2023-10-26T00:17:18.548Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:18.551Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:18.551Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//div[@class = \"sidebar sidebar-main\"]//a[text() = \"Jackets\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:19.354Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:19.357Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:19.357Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//ol[@class = \"products list items product-items\"]//li//strong[@class = \"product name product-item-name\"]//a[contains(text(), \"Montana Wind Jacket\")] in page."}
+{"level":30,"time":"2023-10-26T00:17:19.946Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:19.949Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:19.949Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//form[@id = \"product_addtocart_form\"]//div[contains(@aria-labelledby, \"option-label-size\")]/div[@option-label=\"M\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:20.379Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:20.383Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:20.383Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//form[@id = \"product_addtocart_form\"]//div[contains(@aria-labelledby, \"option-label-color\")]/div[@option-label=\"Red\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:20.407Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:20.410Z","pid":24412,"hostname":"Amfster","msg":"Start of node method clearText"}
+{"level":30,"time":"2023-10-26T00:17:20.410Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//form[@id = \"product_addtocart_form\"]//input[@name = \"qty\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:20.421Z","pid":24412,"hostname":"Amfster","msg":"End of node method clearText"}
+{"level":30,"time":"2023-10-26T00:17:20.424Z","pid":24412,"hostname":"Amfster","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:20.424Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//form[@id = \"product_addtocart_form\"]//input[@name = \"qty\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:20.434Z","pid":24412,"hostname":"Amfster","msg":"End of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:20.437Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:20.437Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//button[@title = \"Add to Cart\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:20.488Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:20.493Z","pid":24412,"hostname":"Amfster","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-10-26T00:17:20.493Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//button[@title = \"Added\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:21.327Z","pid":24412,"hostname":"Amfster","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-10-26T00:17:21.329Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:21.329Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//span[text() = \"Women\"]/ancestor::a in page."}
+{"level":30,"time":"2023-10-26T00:17:21.839Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:21.844Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:21.844Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//div[@class = \"sidebar sidebar-main\"]//a[text() = \"Shorts\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:22.431Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:22.434Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:22.434Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//ol[@class = \"products list items product-items\"]//li//strong[@class = \"product name product-item-name\"]//a[contains(text(), \"Erika Running Short\")] in page."}
+{"level":30,"time":"2023-10-26T00:17:23.030Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:23.032Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:23.032Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//form[@id = \"product_addtocart_form\"]//div[contains(@aria-labelledby, \"option-label-size\")]/div[@option-label=\"31\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:23.425Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:23.427Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:23.427Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//form[@id = \"product_addtocart_form\"]//div[contains(@aria-labelledby, \"option-label-color\")]/div[@option-label=\"Green\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:23.468Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:23.470Z","pid":24412,"hostname":"Amfster","msg":"Start of node method clearText"}
+{"level":30,"time":"2023-10-26T00:17:23.470Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//form[@id = \"product_addtocart_form\"]//input[@name = \"qty\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:23.480Z","pid":24412,"hostname":"Amfster","msg":"End of node method clearText"}
+{"level":30,"time":"2023-10-26T00:17:23.483Z","pid":24412,"hostname":"Amfster","msg":"Start of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:23.483Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//form[@id = \"product_addtocart_form\"]//input[@name = \"qty\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:23.493Z","pid":24412,"hostname":"Amfster","msg":"End of node method typeText"}
+{"level":30,"time":"2023-10-26T00:17:23.495Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:23.495Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//button[@title = \"Add to Cart\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:23.534Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:23.537Z","pid":24412,"hostname":"Amfster","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-10-26T00:17:23.537Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//button[@title = \"Added\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:24.866Z","pid":24412,"hostname":"Amfster","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-10-26T00:17:24.869Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:24.869Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//div[@class = \"header content\"]//a[@class = \"action showcart\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:24.894Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:24.896Z","pid":24412,"hostname":"Amfster","msg":"Start of node method click"}
+{"level":30,"time":"2023-10-26T00:17:24.896Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//div[@class = \"header content\"]//a[@class = \"action viewcart\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:26.438Z","pid":24412,"hostname":"Amfster","msg":"End of node method click"}
+{"level":30,"time":"2023-10-26T00:17:26.443Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2023-10-26T00:17:26.443Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is disabled, return Locator: xpath=//table[@id = \"shopping-cart-table\"]//tr[@class = \"item-info\"]//a[contains(text(), \"Montana Wind Jacket\")] in page."}
+{"level":30,"time":"2023-10-26T00:17:26.499Z","pid":24412,"hostname":"Amfster","msg":"End of node method getElementCount"}
+{"level":30,"time":"2023-10-26T00:17:26.502Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getText"}
+{"level":30,"time":"2023-10-26T00:17:26.502Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Montana Wind Jacket\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Price\"]//span[@class = \"price\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:26.605Z","pid":24412,"hostname":"Amfster","msg":"Retrieved text for element xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Montana Wind Jacket\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Price\"]//span[@class = \"price\"] containing $49.00"}
+{"level":30,"time":"2023-10-26T00:17:26.605Z","pid":24412,"hostname":"Amfster","msg":"End of node method getText"}
+{"level":30,"time":"2023-10-26T00:17:26.608Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2023-10-26T00:17:26.608Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Montana Wind Jacket\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Qty\"]//input in page."}
+{"level":30,"time":"2023-10-26T00:17:26.716Z","pid":24412,"hostname":"Amfster","msg":"Retrieved attribute for element xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Montana Wind Jacket\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Qty\"]//input containing 1"}
+{"level":30,"time":"2023-10-26T00:17:26.716Z","pid":24412,"hostname":"Amfster","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2023-10-26T00:17:26.723Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getText"}
+{"level":30,"time":"2023-10-26T00:17:26.723Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Montana Wind Jacket\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Subtotal\"]//span[@class = \"price\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:26.858Z","pid":24412,"hostname":"Amfster","msg":"Retrieved text for element xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Montana Wind Jacket\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Subtotal\"]//span[@class = \"price\"] containing $49.00"}
+{"level":30,"time":"2023-10-26T00:17:26.858Z","pid":24412,"hostname":"Amfster","msg":"End of node method getText"}
+{"level":30,"time":"2023-10-26T00:17:26.861Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2023-10-26T00:17:26.861Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is disabled, return Locator: xpath=//table[@id = \"shopping-cart-table\"]//tr[@class = \"item-info\"]//a[contains(text(), \"Erika Running Short\")] in page."}
+{"level":30,"time":"2023-10-26T00:17:26.867Z","pid":24412,"hostname":"Amfster","msg":"End of node method getElementCount"}
+{"level":30,"time":"2023-10-26T00:17:26.871Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getText"}
+{"level":30,"time":"2023-10-26T00:17:26.871Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Erika Running Short\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Price\"]//span[@class = \"price\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:26.929Z","pid":24412,"hostname":"Amfster","msg":"Retrieved text for element xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Erika Running Short\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Price\"]//span[@class = \"price\"] containing $45.00"}
+{"level":30,"time":"2023-10-26T00:17:26.929Z","pid":24412,"hostname":"Amfster","msg":"End of node method getText"}
+{"level":30,"time":"2023-10-26T00:17:26.932Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2023-10-26T00:17:26.932Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Erika Running Short\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Qty\"]//input in page."}
+{"level":30,"time":"2023-10-26T00:17:26.937Z","pid":24412,"hostname":"Amfster","msg":"Retrieved attribute for element xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Erika Running Short\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Qty\"]//input containing 2"}
+{"level":30,"time":"2023-10-26T00:17:26.937Z","pid":24412,"hostname":"Amfster","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2023-10-26T00:17:26.943Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getText"}
+{"level":30,"time":"2023-10-26T00:17:26.943Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Erika Running Short\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Subtotal\"]//span[@class = \"price\"] in page."}
+{"level":30,"time":"2023-10-26T00:17:26.956Z","pid":24412,"hostname":"Amfster","msg":"Retrieved text for element xpath=//table[@id = \"shopping-cart-table\"]//a[contains(text(), \"Erika Running Short\")]//ancestor::tr[@class = \"item-info\"]//td[@data-th= \"Subtotal\"]//span[@class = \"price\"] containing $90.00"}
+{"level":30,"time":"2023-10-26T00:17:26.956Z","pid":24412,"hostname":"Amfster","msg":"End of node method getText"}
+{"level":30,"time":"2023-10-26T00:17:26.959Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getText"}
+{"level":30,"time":"2023-10-26T00:17:26.959Z","pid":24412,"hostname":"Amfster","msg":"Strict mode is enabled, find Locator with xpath=//tr[@class = \"grand totals\"]//span in page."}
+{"level":30,"time":"2023-10-26T00:17:28.295Z","pid":24412,"hostname":"Amfster","msg":"Retrieved text for element xpath=//tr[@class = \"grand totals\"]//span containing $139.00"}
+{"level":30,"time":"2023-10-26T00:17:28.295Z","pid":24412,"hostname":"Amfster","msg":"End of node method getText"}
+{"level":30,"time":"2023-10-26T00:17:28.299Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:28.300Z","pid":24412,"hostname":"Amfster","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:28.301Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:28.303Z","pid":24412,"hostname":"Amfster","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:28.304Z","pid":24412,"hostname":"Amfster","msg":"Changed active context"}
+{"level":30,"time":"2023-10-26T00:17:28.304Z","pid":24412,"hostname":"Amfster","msg":"Changing current active page: page=ef471e3d-7ad8-455a-840e-6b75e0808650"}
+{"level":30,"time":"2023-10-26T00:17:28.304Z","pid":24412,"hostname":"Amfster","msg":"Changed active page"}
+{"level":30,"time":"2023-10-26T00:17:28.312Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:28.313Z","pid":24412,"hostname":"Amfster","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:28.315Z","pid":24412,"hostname":"Amfster","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-10-26T00:17:28.315Z","pid":24412,"hostname":"Amfster","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-10-26T00:17:28.316Z","pid":24412,"hostname":"Amfster","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-10-26T00:17:28.317Z","pid":24412,"hostname":"Amfster","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-10-26T00:17:28.318Z","pid":24412,"hostname":"Amfster","msg":"Changing current active page: page=ef471e3d-7ad8-455a-840e-6b75e0808650"}
+{"level":30,"time":"2023-10-26T00:17:28.318Z","pid":24412,"hostname":"Amfster","msg":"Changed active page"}
+{"level":30,"time":"2023-10-26T00:17:28.321Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:28.322Z","pid":24412,"hostname":"Amfster","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:28.323Z","pid":24412,"hostname":"Amfster","msg":"Changed active context"}
+{"level":30,"time":"2023-10-26T00:17:28.323Z","pid":24412,"hostname":"Amfster","msg":"Changing current active page: page=ef471e3d-7ad8-455a-840e-6b75e0808650"}
+{"level":30,"time":"2023-10-26T00:17:28.323Z","pid":24412,"hostname":"Amfster","msg":"Changed active page"}
+{"level":30,"time":"2023-10-26T00:17:28.324Z","pid":24412,"hostname":"Amfster","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-10-26T00:17:28.331Z","pid":24412,"hostname":"Amfster","msg":"Removed page=27c80b8e-47b9-4bfd-a29f-3f18e6b83da4 from context=6093db12-57c1-4bd9-b164-f01342e280d7 page stack"}
+{"level":30,"time":"2023-10-26T00:17:28.346Z","pid":24412,"hostname":"Amfster","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-10-26T00:17:28.350Z","pid":24412,"hostname":"Amfster","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2023-10-26T00:17:28.458Z","pid":24412,"hostname":"Amfster","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\jlenz\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9470:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\jlenz\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9991:59)
+    at PlaywrightServer.setTimeout (C:\Users\jlenz\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10237:57)
+    at handleUnary (C:\Users\jlenz\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-10-26T00:17:28.484Z","pid":24412,"hostname":"Amfster","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:28.484Z","pid":24412,"hostname":"Amfster","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-10-26T00:17:30.558Z","pid":24412,"hostname":"Amfster","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-10-26T00:17:30.558Z","pid":24412,"hostname":"Amfster","msg":"End of node method closeAllBrowsers"}
